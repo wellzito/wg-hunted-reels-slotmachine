@@ -1,4 +1,3 @@
-// Editor/BuildBlocker.cs
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
@@ -51,10 +50,8 @@ namespace WG_Casino.Editor
                              "║                                                                ║\n" +
                              "║  APÓS ADQUIRIR A LICENÇA:                                       ║\n" +
                              "║                                                                ║\n" +
-                             "║    1. Remova este arquivo (BuildBlocker.cs) do package         ║\n" +
-                             "║    2. Ou adicione a define simbólica:                          ║\n" +
+                             "║    1. Ou adicione a define simbólica:                          ║\n" +
                              "║       WG_HUNTED_REELS_LICENSED                                  ║\n" +
-                             "║    3. Ou crie o arquivo: Assets/wg_license.txt                 ║\n" +
                              "║                                                                ║\n" +
                              "╚════════════════════════════════════════════════════════════════╝";
 

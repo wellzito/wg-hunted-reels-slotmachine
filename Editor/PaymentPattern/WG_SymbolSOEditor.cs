@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace WG_Casino.Setup
 {
     [CustomEditor(typeof(WG_SymbolSO))]
-    public class WG_SymbolSOEditor : Editor
+    public class WG_SymbolSOEditor : UnityEditor.Editor
     {
         private WG_SymbolSO symbol;
 
