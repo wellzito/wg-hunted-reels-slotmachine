@@ -1,0 +1,42 @@
+{
+  "name": "com.picdoor.slotmachine",
+  "displayName": "WG Hunted Reels - Slot Machine",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "Complete slot machine system with support for Spine, PrimeTween, modular events, and a payout system. Includes a mini-game and mechanical octopus bonus.",
+  "keywords": [
+    "slot",
+    "machine",
+    "casino",
+    "slotmachine",
+    "gambling",
+    "spine",
+    "tween",
+    "hunted-reels"
+  ],
+  "author": {
+    "name": "Well Gomes",
+    "email": "suportegamebug@gmail.com",
+    "url": "https://github.com/wellzito"
+  },
+  "type": "tool",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.mathematics": "1.2.6"
+  },
+  "optionalDependencies": {
+    "com.esotericsoftware.spine.spine-unity": "4.1.0",
+    "com.cysharp.unitask": "2.5.0"
+  },
+  "documentationUrl": "https://docs.picdoor.com/slotmachine",
+  "changelogUrl": "https://docs.picdoor.com/slotmachine/changelog",
+  "licensesUrl": "https://docs.picdoor.com/slotmachine/license",
+  "samples": [
+    {
+      "displayName": "Basic Integration",
+      "description": "Basic example of slot machine integration.",
+      "path": "Samples~/BasicIntegration"
+    }
+  ]
+}

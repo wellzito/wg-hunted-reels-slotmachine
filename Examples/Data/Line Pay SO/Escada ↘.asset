@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80066d3bb5a1df041956d31b7c1a4bdc, type: 3}
+  m_Name: "Escada \u2198"
+  m_EditorClassIdentifier: 
+  reelCount: 5
+  visibleRows: 3
+  payoutValue: 10
+  isBonusPattern: 0
+  patternId: 7
+  patternName: "Escada \u2198"
+  requiredSymbolId: -1
+  minMatchCount: 5
+  _selectedSlots:
+  - reelIndex: 0
+    rowIndex: 0
+    slotSprite: {fileID: 0}
+  - reelIndex: 1
+    rowIndex: 1
+    slotSprite: {fileID: 0}
+  - reelIndex: 2
+    rowIndex: 1
+    slotSprite: {fileID: 0}
+  - reelIndex: 3
+    rowIndex: 2
+    slotSprite: {fileID: 0}
+  - reelIndex: 4
+    rowIndex: 2
+    slotSprite: {fileID: 0}

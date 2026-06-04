@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5f5d2a95bad584f87a10cb944512f8, type: 3}
+  m_Name: Abobora
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: -4146064004188950569, guid: bfa5edfdcdca8ac40bc1d10c4bf2ef9f, type: 3}
+  moveSprite: {fileID: -4146064004188950569, guid: bfa5edfdcdca8ac40bc1d10c4bf2ef9f, type: 3}
+  useSpineDefault: 1
+  defaultSpinePreview: {fileID: 5402768988804590451, guid: 4f42607ee2d66d84abb6f85829522b25, type: 3}
+  defaultIdleAnimation: idle
+  defaultSpinAnimation: still
+  m_reelIconsList:
+  - {fileID: -4146064004188950569, guid: bfa5edfdcdca8ac40bc1d10c4bf2ef9f, type: 3}
+  materialsLine: {fileID: 2100000, guid: a9add2530b0f0ba45a1ff33de173feed, type: 2}
+  onSpine: 1
+  skeletonGraphic: {fileID: 5402768988804590451, guid: 7d100d5fcfca80143a2f9fe0efd4c24d, type: 3}
+  rectTransformVector:
+    anchorMin: {x: 0, y: 0}
+    anchorMax: {x: 1, y: 1}
+    offsetMin: {x: 0, y: 0}
+    offsetMax: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.1}
+    anchoredPosition: {x: 0, y: 0}
+    localScale: {x: 0.2, y: 0.2, z: 0.2}
+  rectTransformVectorIcon:
+    anchorMin: {x: 0, y: 0}
+    anchorMax: {x: 1, y: 1}
+    offsetMin: {x: 0, y: 0}
+    offsetMax: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0}
+    anchoredPosition: {x: 0, y: 0}
+    localScale: {x: 0.2, y: 0.2, z: 0.2}
+  rectTransformVectorIconSpin:
+    anchorMin: {x: 0, y: 0}
+    anchorMax: {x: 1, y: 1}
+    offsetMin: {x: 0, y: 0}
+    offsetMax: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.3}
+    anchoredPosition: {x: 0, y: 0}
+    localScale: {x: 0.15, y: 0.15, z: 0.15}

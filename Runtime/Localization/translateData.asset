@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea589ecfee706c4a9ab6a98bdd46142, type: 3}
+  m_Name: translateData
+  m_EditorClassIdentifier: 
+  translates:
+  - name: pt
+    keyValues:
+    - Key: connecting
+      Value: Conectando...
+    - Key: play_game
+      Value: JOGAR
+    - Key: no_balance
+      Value: "Saldo insuficiente. Por favor, insira mais cr\xE9ditos para continuar
+        jogando."
+    - Key: no_balance_title
+      Value: Saldo insuficiente
+    - Key: ready
+      Value: Pronto
+    - Key: gainGame
+      Value: 'Ganhos:'
+    - Key: QuickSpinDescpt
+      Value: shot until have credits
+    - Key: TurbiSpin
+      Value: Turbo Spin
+    - Key: QuickSpin
+      Value: "Giro r\xE1pido\r"
+    - Key: GameHistory
+      Value: "Hist\xF3ria do jogo"
+    - Key: Paytable
+      Value: Tabela de pagamento
+    - Key: Rules
+      Value: Regras
+    - Key: EffectsVol
+      Value: Volume de efeitos
+    - Key: MusicVol
+      Value: "Volume da m\xFAsica"
+    - Key: MasterVol
+      Value: Volume mestre
+    - Key: SystemSettings
+      Value: "Configura\xE7\xF5es do sistema"
+    - Key: autenticating
+      Value: Autenticando...
+    - Key: AutoSpin
+      Value: Valor da aposta
+    - Key: StartAutoSpin
+      Value: Start Auto Spin
+    - Key: Credit
+      Value: "Cr\xE9dito"
+    - Key: Time
+      Value: 'Tempo
+
+        (GMT-3:00)'
+    - Key: Game
+      Value: Jogo
+    - Key: Bet
+      Value: Aposta
+    - Key: Gain
+      Value: Ganhos
+    - Key: Play
+      Value: Jogar
+    - Key: orientation
+      Value: "Por favor, vire seu dispositivo para o modo paisagem (horizontal) para
+        uma melhor experi\xEAncia!"
+    - Key: MainGame
+      Value: Main Game
+    - Key: rules
+      Value: "WG Hunted Reels \xE9 um ca\xE7a-n\xEDquel de v\xEDdeo com 3 linhas
+        e 5 colunas, com m\xFAltiplas possibilidades de combina\xE7\xF5es pagantes.
+        As combina\xE7\xF5es s\xE3o formadas por padr\xF5es de pagamento que podem
+        ocorrer em diferentes posi\xE7\xF5es do grid, com pagamentos para combina\xE7\xF5es
+        de 3, 4 ou 5 s\xEDmbolos iguais. O jogo utiliza um sistema de maneiras (ways)
+        onde os ganhos s\xE3o calculados com base no n\xFAmero de s\xEDmbolos consecutivos
+        a partir da primeira coluna.\r\n\r\nAs apostas podem ser feitas com os seguintes
+        valores em centavos: 100, 200, 500, 1000, 2000 (equivalente a 1, 2, 5, 10
+        e 20 reais, respectivamente).\r\n\r\nS\xEDmbolo Wild\r\nO s\xEDmbolo Wild
+        substitui todos os outros s\xEDmbolos para formar combina\xE7\xF5es vencedoras.
+        O Wild n\xE3o possui pagamento pr\xF3prio e sua fun\xE7\xE3o \xE9 auxiliar
+        na cria\xE7\xE3o de combina\xE7\xF5es.\r\n\r\nMini-game\r\nAo encontrar s\xEDmbolos
+        do polvo mec\xE2nico, um mini-game \xE9 ativado. O tent\xE1culo do polvo
+        escolhe aleatoriamente uma regi\xE3o do grid e transforma um n\xFAmero aleat\xF3rio
+        de \xEDcones em \xEDcones pagantes, aumentando as chances de vit\xF3ria.\r\n\r\nB\xF4nus\r\nO
+        b\xF4nus \xE9 ativado atrav\xE9s da apari\xE7\xE3o de s\xEDmbolos espec\xEDficos
+        do polvo mec\xE2nico ou atrav\xE9s da compra imediata pelo bot\xE3o do carrinho
+        ao lado do rolo. Ap\xF3s a ativa\xE7\xE3o, o cofre \xE9 aberto e o polvo
+        mec\xE2nico ataca em dire\xE7\xF5es aleat\xF3rias.\r\n\r\nDurante o b\xF4nus,
+        valores s\xE3o mostrados:\r\n\r\nValores entre 20 e 25: s\xE3o somados aos
+        multiplicadores acumulados\r\n\r\nValores entre 30 e 32: multiplicam os multiplicadores
+        j\xE1 acumulados\r\n\r\nAo final do b\xF4nus, todos os multiplicadores acumulados
+        s\xE3o somados e multiplicados pelo valor do ganho da rodada que ativou o
+        b\xF4nus. O b\xF4nus se encerra quando o tent\xE1culo do polvo mec\xE2nico
+        n\xE3o \xE9 sorteado por 3 vezes consecutivas.\r\n\r\nCompras\r\nAs compras
+        do mini-game e do b\xF4nus podem ser realizadas atrav\xE9s do bot\xE3o do
+        carrinho ao lado do rolo, fazendo com que o evento comprado aconte\xE7a instantaneamente.\r\n\r\nPagamentos\r\nO
+        jogo possui 10 linhas de pagamento (paylines), onde cada linha de pagamento
+        representa um padr\xE3o de posi\xE7\xF5es no grid. O valor apostado por linha
+        \xE9 calculado dividindo a aposta total pelo n\xFAmero de linhas de pagamento.
+        Os multiplicadores de pagamento s\xE3o aplicados sobre o valor apostado por
+        linha, sendo eles:\r\n\r\nS\xEDmbolo Bruxa (150x para 5 s\xEDmbolos, 25x
+        para 4 s\xEDmbolos, 5x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo Ab\xF3bora (100x
+        para 5 s\xEDmbolos, 15x para 4 s\xEDmbolos, 4x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Caveira (60x para 5 s\xEDmbolos, 10x para 4 s\xEDmbolos, 3x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Morcego (30x para 5 s\xEDmbolos, 8x para 4 s\xEDmbolos, 2x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Aranha (20x para 5 s\xEDmbolos, 6x para 4 s\xEDmbolos, 1.5x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Po\xE7\xE3o (15x para 5 s\xEDmbolos, 4x para 4 s\xEDmbolos, 1x para 3 s\xEDmbolos)\r\n\r\nGanhos
+        m\xFAltiplos podem ocorrer quando mais de uma linha de pagamento \xE9 acertada
+        simultaneamente, somando-se todos os pagamentos.\r\n\r\nO sistema de replay
+        permite revisitar jogadas anteriores do hist\xF3rico, restaurando completamente
+        o estado da slot machine incluindo os \xEDcones, anima\xE7\xF5es e spines
+        dos s\xEDmbolos."
+    - Key: BetChange
+      Value: "Rota\xE7\xE3o autom\xE1tica"
+    - Key: StartSpin
+      Value: Iniciar Giro
+    - Key: idioma
+      Value: idioma
+    - Key: payouts
+      Value: Rules
+  - name: en
+    keyValues:
+    - Key: connecting
+      Value: Conecting...
+    - Key: play_game
+      Value: PLAY
+    - Key: no_balance
+      Value: Insufficient balance. Please insert more credits for keep playing.
+    - Key: no_balance_title
+      Value: Insufficient balance
+    - Key: ready
+      Value: Ready
+    - Key: gainGame
+      Value: 'Gains:'
+    - Key: QuickSpinDescpt
+      Value: shot until have credits
+    - Key: TurbiSpin
+      Value: Turbo Spin
+    - Key: QuickSpin
+      Value: Quick Spin
+    - Key: GameHistory
+      Value: Game History
+    - Key: Paytable
+      Value: Payment table
+    - Key: Rules
+      Value: Regras
+    - Key: EffectsVol
+      Value: Effects Volume
+    - Key: MusicVol
+      Value: Music Volume
+    - Key: MasterVol
+      Value: Master Volume
+    - Key: SystemSettings
+      Value: System Settings
+    - Key: autenticating
+      Value: Autenticando...
+    - Key: AutoSpin
+      Value: Bet value
+    - Key: StartAutoSpin
+      Value: Start Auto Spin
+    - Key: Credit
+      Value: Credit
+    - Key: Time
+      Value: 'Time
+
+        (GMT-3:00)'
+    - Key: Game
+      Value: Game
+    - Key: Bet
+      Value: Apuesta
+    - Key: Gain
+      Value: Gain
+    - Key: Play
+      Value: Play
+    - Key: orientation
+      Value: For the best experience, please use your device in horizontal orientation.
+    - Key: MainGame
+      Value: Main Game
+    - Key: rules
+      Value: 'WG Hunted Reels is a video slot machine with 3 rows and 5 columns,
+        featuring multiple winning combination possibilities. Combinations are formed
+        through payment patterns that can occur in different grid positions, with
+        payouts for 3, 4 or 5 matching symbols. The game uses a ways system where
+        wins are calculated based on consecutive symbols starting from the first
+        column.
+
+        
+
+        Available bet values in cents: 100, 200, 500,
+        1000, 2000 (equivalent to 1, 2, 5, 10 and 20 Brazilian reais, respectively).
+
+        
+
+        Wild
+        Symbol
+
+        The Wild symbol substitutes for all other symbols to form
+        winning combinations. The Wild has no payout of its own and serves only to
+        assist in creating combinations.
+
+        
+
+        Mini-game
+
+        When
+        mechanical octopus symbols appear, a mini-game is activated. The octopus
+        tentacle randomly selects a region of the grid and transforms a random number
+        of icons into paying icons, increasing winning chances.
+
+        
+
+        Bonus
+
+        The
+        bonus is activated by the appearance of specific mechanical octopus symbols
+        or through immediate purchase via the cart button next to the reel. After
+        activation, the vault opens and the mechanical octopus attacks in random
+        directions.
+
+        
+
+        During the bonus, values are displayed:
+
+        
+
+        Values
+        between 20 and 25: added to accumulated multipliers
+
+        
+
+        Values
+        between 30 and 32: multiply the already accumulated multipliers
+
+        
+
+        At
+        the end of the bonus, all accumulated multipliers are summed and multiplied
+        by the win value from the round that triggered the bonus. The bonus ends
+        when the mechanical octopus tentacle is not drawn for 3 consecutive times.
+
+        
+
+        Purchases
+
+        Mini-game
+        and bonus purchases can be made through the cart button next to the reel,
+        causing the purchased event to happen instantly.
+
+        
+
+        Payouts
+
+        The
+        game features 10 paylines, where each payline represents a pattern of positions
+        on the grid. The wagered amount per line is calculated by dividing the total
+        bet by the number of paylines. Payout multipliers are applied to the wagered
+        amount per line as follows:
+
+        
+
+        Witch symbol (150x for 5
+        symbols, 25x for 4 symbols, 5x for 3 symbols)
+
+        
+
+        Pumpkin
+        symbol (100x for 5 symbols, 15x for 4 symbols, 4x for 3 symbols)
+
+        
+
+        Skull
+        symbol (60x for 5 symbols, 10x for 4 symbols, 3x for 3 symbols)
+
+        
+
+        Bat
+        symbol (30x for 5 symbols, 8x for 4 symbols, 2x for 3 symbols)
+
+        
+
+        Spider
+        symbol (20x for 5 symbols, 6x for 4 symbols, 1.5x for 3 symbols)
+
+        
+
+        Potion
+        symbol (15x for 5 symbols, 4x for 4 symbols, 1x for 3 symbols)
+
+        
+
+        Multiple
+        wins can occur when more than one payline is hit simultaneously, with all
+        payouts being summed.
+
+        
+
+        The replay system allows revisiting
+        previous plays from history, completely restoring the slot machine state
+        including icons, animations, and symbol spines.'
+    - Key: BetChange
+      Value: "Rota\xE7\xE3o autom\xE1tica"
+    - Key: StartSpin
+      Value: Start Spin
+    - Key: idioma
+      Value: Language
+    - Key: payouts
+      Value: Rules
+  - name: es
+    keyValues:
+    - Key: connecting
+      Value: Conectando...
+    - Key: play_game
+      Value: JUGAR
+    - Key: no_balance
+      Value: "Saldo Insuficiente. Por favor, inserte m\xE1s cr\xE9ditos para continuar
+        jugando."
+    - Key: no_balance_title
+      Value: Saldo insuficiente
+    - Key: ready
+      Value: Listo
+    - Key: gainGame
+      Value: 'Ganancias:'
+    - Key: QuickSpinDescpt
+      Value: shot until have credits
+    - Key: TurbiSpin
+      Value: Turbo Spin
+    - Key: QuickSpin
+      Value: "Giro r\xE1pido\r"
+    - Key: GameHistory
+      Value: Historia del juego
+    - Key: Paytable
+      Value: Tabla de pagos
+    - Key: Rules
+      Value: Regras
+    - Key: EffectsVol
+      Value: Volumen de efectos
+    - Key: MusicVol
+      Value: "Volumen de m\xFAsica"
+    - Key: MasterVol
+      Value: Volumen maestro
+    - Key: SystemSettings
+      Value: "Configuraci\xF3n del sistema"
+    - Key: autenticating
+      Value: Autenticando...
+    - Key: AutoSpin
+      Value: Valor de la apuesta
+    - Key: StartAutoSpin
+      Value: Start Auto Spin
+    - Key: Credit
+      Value: "Cr\xE9dito"
+    - Key: Time
+      Value: 'Tempo
+
+        (GMT-3:00)'
+    - Key: Game
+      Value: Juego
+    - Key: Bet
+      Value: Aposta
+    - Key: Gain
+      Value: Ganar
+    - Key: Play
+      Value: Jugar
+    - Key: orientation
+      Value: "Gira el dispositivo a posici\xF3n horizontal para continuar."
+    - Key: MainGame
+      Value: Main Game
+    - Key: rules
+      Value: "WG Hunted Reels es una tragamonedas de video con 3 l\xEDneas y 5 columnas,
+        con m\xFAltiples posibilidades de combinaciones ganadoras. Las combinaciones
+        se forman mediante patrones de pago que pueden ocurrir en diferentes posiciones
+        del grid, con pagos para combinaciones de 3, 4 o 5 s\xEDmbolos iguales. El
+        juego utiliza un sistema de formas (ways) donde las ganancias se calculan
+        bas\xE1ndose en el n\xFAmero de s\xEDmbolos consecutivos desde la primera
+        columna.\r\n\r\nLas apuestas se pueden realizar con los siguientes valores
+        en centavos: 100, 200, 500, 1000, 2000 (equivalente a 1, 2, 5, 10 y 20 reales
+        brasile\xF1os, respectivamente).\r\n\r\nS\xEDmbolo Wild\r\nEl s\xEDmbolo
+        Wild sustituye a todos los dem\xE1s s\xEDmbolos para formar combinaciones
+        ganadoras. El Wild no tiene pago propio y su funci\xF3n es auxiliar en la
+        creaci\xF3n de combinaciones.\r\n\r\nMini-juego\r\nAl encontrar s\xEDmbolos
+        del pulpo mec\xE1nico, se activa un mini-juego. El tent\xE1culo del pulpo
+        elige aleatoriamente una regi\xF3n del grid y transforma un n\xFAmero aleatorio
+        de iconos en iconos pagadores, aumentando las posibilidades de victoria.\r\n\r\nBono\r\nEl
+        bono se activa mediante la aparici\xF3n de s\xEDmbolos espec\xEDficos del
+        pulpo mec\xE1nico o mediante la compra inmediata a trav\xE9s del bot\xF3n
+        del carrito al lado del rodillo. Despu\xE9s de la activaci\xF3n, la caja
+        fuerte se abre y el pulpo mec\xE1nico ataca en direcciones aleatorias.\r\n\r\nDurante
+        el bono, se muestran valores:\r\n\r\nValores entre 20 y 25: se suman a los
+        multiplicadores acumulados\r\n\r\nValores entre 30 y 32: multiplican los
+        multiplicadores ya acumulados\r\n\r\nAl final del bono, todos los multiplicadores
+        acumulados se suman y se multiplican por el valor de la ganancia de la ronda
+        que activ\xF3 el bono. El bono finaliza cuando el tent\xE1culo del pulpo
+        mec\xE1nico no aparece durante 3 veces consecutivas.\r\n\r\nCompras\r\nLas
+        compras del mini-juego y del bono se pueden realizar a trav\xE9s del bot\xF3n
+        del carrito al lado del rodillo, haciendo que el evento comprado ocurra instant\xE1neamente.\r\n\r\nPagos\r\nEl
+        juego tiene 10 l\xEDneas de pago (paylines), donde cada l\xEDnea de pago
+        representa un patr\xF3n de posiciones en el grid. El valor apostado por l\xEDnea
+        se calcula dividiendo la apuesta total por el n\xFAmero de l\xEDneas de pago.
+        Los multiplicadores de pago se aplican sobre el valor apostado por l\xEDnea,
+        siendo ellos:\r\n\r\nS\xEDmbolo Bruja (150x para 5 s\xEDmbolos, 25x para
+        4 s\xEDmbolos, 5x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo Calabaza (100x para
+        5 s\xEDmbolos, 15x para 4 s\xEDmbolos, 4x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Calavera (60x para 5 s\xEDmbolos, 10x para 4 s\xEDmbolos, 3x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Murci\xE9lago (30x para 5 s\xEDmbolos, 8x para 4 s\xEDmbolos, 2x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Ara\xF1a (20x para 5 s\xEDmbolos, 6x para 4 s\xEDmbolos, 1.5x para 3 s\xEDmbolos)\r\n\r\nS\xEDmbolo
+        Poci\xF3n (15x para 5 s\xEDmbolos, 4x para 4 s\xEDmbolos, 1x para 3 s\xEDmbolos)\r\n\r\nSe
+        pueden producir ganancias m\xFAltiples cuando se acierta m\xE1s de una l\xEDnea
+        de pago simult\xE1neamente, sum\xE1ndose todos los pagos.\r\n\r\nEl sistema
+        de repetici\xF3n permite revisar jugadas anteriores del historial, restaurando
+        completamente el estado de la tragamonedas incluyendo los iconos, animaciones
+        y spines de los s\xEDmbolos."
+    - Key: BetChange
+      Value: "Rota\xE7\xE3o autom\xE1tica"
+    - Key: StartSpin
+      Value: Empezar a girar
+    - Key: idioma
+      Value: idioma
+    - Key: payouts
+      Value: Rules

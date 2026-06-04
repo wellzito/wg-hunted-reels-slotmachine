@@ -1,0 +1,31 @@
+{
+    "name": "com.picdoor.slotmachine.Runtime",
+    "rootNamespace": "WG_Casino",
+    "references": [
+        "Unity.Mathematics",
+        "Unity.TextMeshPro",
+        "PrimeTween.Runtime",
+        "spine-csharp",
+        "spine-unity"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.esotericsoftware.spine.spine-unity",
+            "expression": "4.0.0",
+            "define": "SPINE_EXISTS"
+        },
+        {
+            "name": "com.kybernetik.primetween",
+            "expression": "1.0.0",
+            "define": "PRIME_TWEEN_EXISTS"
+        }
+    ],
+    "noEngineReferences": false
+}

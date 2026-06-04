@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd48b3af9b983a4480601c499a583c0, type: 3}
+  m_Name: AllPayment
+  m_EditorClassIdentifier: 
+  paymentPatterns:
+  - {fileID: 11400000, guid: 8da97d9211371ea40a69e13297b5c3e7, type: 2}
+  - {fileID: 11400000, guid: 9651bb7267b23334f828f66f515fa253, type: 2}
+  - {fileID: 11400000, guid: ef5c2dd281a24ff4b9a46b11042f7144, type: 2}
+  - {fileID: 11400000, guid: faa645dce4032ac4cba3d9fa2b0ca711, type: 2}
+  - {fileID: 11400000, guid: 4ca478ec66a5a374db3649dde224e309, type: 2}
+  - {fileID: 11400000, guid: 05979ecb78ef58e42bd3d69865421a5a, type: 2}
+  - {fileID: 11400000, guid: 81fb47583b8d3824b98eccb4a6ef3ff0, type: 2}
+  - {fileID: 11400000, guid: 89bf49fea6929ab44a1e7aef6e3596c1, type: 2}
+  - {fileID: 11400000, guid: 6deaf9ee4287d974f802e97f6ea623df, type: 2}
+  - {fileID: 11400000, guid: 775e52b694068214f9b5181086093768, type: 2}
+  baseCoinValue: 1
+  bonusMultiplier: 5
