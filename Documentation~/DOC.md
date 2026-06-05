@@ -258,7 +258,7 @@ Leia o arquivo [LICENSE](Documentation~/license.md) para mais informações.
 
 - **Desenvolvedor**: Well Gomes
 - **Email**: suportegamebug@gmail.com
-- **GitHub**: https://github.com/wellsouza
+- **GitHub**: https://github.com/wellzito
 
 ---
 
